@@ -1,0 +1,13 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /files-archive/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /files-archive/index.php [L]
+</IfModule>
+# END WordPress
+RewriteCond %{REQUEST_FILENAME} -s
+RewriteRule ^wp-content/uploads/(.*)$ wp-content/themes/mwrd-fa/dl-file.php?file=$1 [QSA,L]
