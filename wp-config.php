@@ -24,7 +24,7 @@ define( 'DB_NAME', 'abdalsal_wp' );
 /** MySQL database username */
 define( 'DB_USER', 'root' );
 /** MySQL database password */
-define( 'DB_PASSWORD', 'breakaleg741' );
+define( 'DB_PASSWORD', 'noonebutme' );
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
 /** Database Charset to use in creating database tables. */
